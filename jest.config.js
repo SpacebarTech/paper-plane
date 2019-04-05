@@ -22,7 +22,12 @@ module.exports = {
     'jest-serializer-vue'
   ],
   testMatch: [
-    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
+    '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)',
+    // I think we're going to adopt the barrel pattern, in
+    // which we will put the tests right next to each
+    // component. Why? Look at this glob vs. the long
+    // gibberish glob above... 👆🏼
+    'src/**/*.spec.ts',
   ],
   testURL: 'http://localhost/',
   globals: {

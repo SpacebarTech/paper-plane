@@ -1,34 +1,21 @@
-# paper-plane
+# Paper Plane
 
-## Project setup
-```
-npm install
-```
+The official component library for JETS Technologies, LLC.
+This project conforms to our internal styleguide and design
+language.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation
 
-### Compiles and minifies for production
-```
-npm run build
+### `npm`
+
+```bash
+npm i @jetstech/paper-plane
 ```
 
-### Run your tests
-```
-npm run test
+### `yarn`
+
+```bash
+yarn add @jetstech/paper-plane
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Usage

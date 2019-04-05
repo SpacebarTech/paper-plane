@@ -1,19 +1,25 @@
 {
-  "name": "paper-plane",
+  "name": "@jetstech/paper-plane",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve -o",
     "build": "vue-cli-service build",
+    "build:dist": "vue-cli-service build --target lib --name paper-plane ./src/components",
+    "generate-barrels": "barrelsby -c barrelsby.json",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "typesync": "npx typesync && npm i"
   },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.6"
   },
   "devDependencies": {
+    "@types/babel-core": "6.25.6",
+    "@types/core-js": "^2.5.0",
     "@types/jest": "^23.1.4",
+    "@types/node-sass": "^4.11.0",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-typescript": "^3.5.0",
     "@vue/cli-plugin-unit-jest": "^3.5.0",
